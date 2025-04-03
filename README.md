@@ -1,6 +1,6 @@
 # Hardware Accelerator for SHA-256 Hashing Algorithm
 
-![Layout of the SHA-256 Accelerator](layout.png)
+![Layout of the SHA-256 Accelerator](./images/layout.png)
 
 ## Project Overview
 - **Objective**: Design a hardware accelerator for SHA-256 hashing interfaced with PicoRV32 CPU via AXI4
@@ -67,22 +67,22 @@
 ## Visualizations
 
 ### Comparison Graphs
-![Design Area vs Core Utilization](area.jpeg)
-![Worst Case IR Drop vs Core Utilization](ir_drop.jpeg)
+![Design Area vs Core Utilization](./images/area.jpeg)
+![Worst Case IR Drop vs Core Utilization](./images/ir_drop.jpeg)
 
 ### CTS Optimizations
-![Max Frequency vs Cluster Size](cts_freq.png)
-![Area vs Cluster Size](cts_area.png)
-![TNS vs Cluster Size](cts_tns.png)
-![Power vs Cluster Size](cts_power.png)
+![Max Frequency vs Cluster Size](./images/cts_freq.png)
+![Area vs Cluster Size](./images/cts_area.png)
+![TNS vs Cluster Size](./images/cts_tns.png)
+![Power vs Cluster Size](./images/cts_power.png)
 
 ### Layout Parameters
-![Power Density](Power_Density.png)
-![Routing Congestion](Routing_Congestion.png)
-![Clock Path](final_clocks.png)
-![Clock Regions](Clock_Tree_Regions.png)
-![Placement Resizer](final_resizer.png)
-![IR Drop](final_ir_drop.png)
+![Power Density](./images/Power_Density.png)
+![Routing Congestion](./images/Routing_Congestion.png)
+![Clock Path](./images/final_clocks.png)
+![Clock Regions](./images/Clock_Tree_Regions.png)
+![Placement Resizer](./images/final_resizer.png)
+![IR Drop](./images/final_ir_drop.png)
 
 ## Future Work
 - **Performance**: Investigate deeper unrolling and pipelining
