@@ -1,6 +1,7 @@
 # Hardware Accelerator for SHA-256 Hashing Algorithm
 
-![Layout of the SHA-256 Accelerator](./images/layout.png)
+![SHA-256 Accelerator Layout](layout.png)  
+*Figure 1: Final layout of the SHA-256 hardware accelerator showing placement and routing*
 
 ## Project Overview
 - **Objective**: Design a hardware accelerator for SHA-256 hashing interfaced with PicoRV32 CPU via AXI4
@@ -67,22 +68,43 @@
 ## Visualizations
 
 ### Comparison Graphs
-![Design Area vs Core Utilization](./images/area.jpeg)
-![Worst Case IR Drop vs Core Utilization](./images/ir_drop.jpeg)
+![Area vs Core Utilization Comparison](area.jpeg)  
+*Figure 2: Design area versus core utilization across different implementations*
+
+![IR Drop vs Core Utilization](ir_drop.jpeg)  
+*Figure 3: Worst case IR drop versus core utilization*
 
 ### CTS Optimizations
-![Max Frequency vs Cluster Size](./images/cts_freq.png)
-![Area vs Cluster Size](./images/cts_area.png)
-![TNS vs Cluster Size](./images/cts_tns.png)
-![Power vs Cluster Size](./images/cts_power.png)
+![Maximum Frequency vs Cluster Size](cts_freq.png)  
+*Figure 4: Maximum achievable frequency for different clock tree cluster sizes*
+
+![Design Area vs Cluster Size](cts_area.png)  
+*Figure 5: Impact of cluster size on total design area*
+
+![Total Negative Slack vs Cluster Size](cts_tns.png)  
+*Figure 6: Timing performance (TNS) across different cluster configurations*
+
+![Power Consumption vs Cluster Size](cts_power.png)  
+*Figure 7: Power consumption trends with varying cluster sizes*
 
 ### Layout Parameters
-![Power Density](./images/Power_Density.png)
-![Routing Congestion](./images/Routing_Congestion.png)
-![Clock Path](./images/final_clocks.png)
-![Clock Regions](./images/Clock_Tree_Regions.png)
-![Placement Resizer](./images/final_resizer.png)
-![IR Drop](./images/final_ir_drop.png)
+![Power Density Distribution](Power_Density.png)  
+*Figure 8: Power density heatmap across the chip layout*
+
+![Routing Congestion Map](Routing_Congestion.png)  
+*Figure 9: Visualization of routing congestion in the design*
+
+![Final Clock Tree Distribution](final_clocks.png)  
+*Figure 10: Clock tree synthesis results showing clock distribution network*
+
+![Clock Tree Regions](Clock_Tree_Regions.png)  
+*Figure 11: Clock tree regions and buffer placement*
+
+![Placement Optimization](final_resizer.png)  
+*Figure 12: Cell placement after resizing optimization*
+
+![IR Drop Analysis](final_ir_drop.png)  
+*Figure 13: IR drop analysis showing voltage variations across the design*
 
 ## Future Work
 - **Performance**: Investigate deeper unrolling and pipelining
